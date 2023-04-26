@@ -5,6 +5,14 @@ html, body{
   color:#000000;
 }
 
+h1#abouthead {
+  margin-bottom: 20px;
+}
+p {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
 .navbar{
   padding: 0.5rem;
   background-color: rgba(255,255,255,0.5);
