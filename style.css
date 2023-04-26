@@ -20,7 +20,11 @@ html, body{
   font-size: 1.4em;
 }
 
-.carousel-inner img{
+#summitimg{
+  width: 1000px;
+  height: 642px;
+}
+/* .carousel-inner img{
   width: 100%;
 }
 .carousel-caption {
@@ -38,7 +42,7 @@ html, body{
   font-weight: 500;
   text-shadow: 1px 1px 10px #000;
   padding-bottom: 1rem;
-}
+} */
 .btn-primary {
   background-color: #6648b1;
   border: 1px solid #564d7c;
@@ -47,10 +51,10 @@ html, body{
   background-color: #563d7c;
   border: 1px solid #563d7c;
 }
-.jumbotron {
+/* .jumbotron {
   padding: 1rem;
   border-radius: 0;
-}
+} */
 .padding {
   padding-bottom: 2rem;
 } 
@@ -68,19 +72,24 @@ html, body{
 .fa-location-dot {
   color: #e54d26;
 }
-.fa-video {
+.zoom {
   color: #563d7c;
+  font-size: 7em;
+  margin: 1rem;
 }
-.fa-youtube {
+.youtube {
   color: #2a63af;
+  font-size: 4em;
+  margin: 1rem;
+  
 }
-.fa-location-dot, .fa-video, .fa-youtube {
+.fa-location-dot {
   font-size: 4em;
   margin: 1rem;
 }
 .fa-location-dot:hover,
-.fa-video:hover,
-.fa-youtube:hover {
+.zoom:hover,
+.youtube:hover {
   color: #d5d5d5;
 }
 .fun{
@@ -122,29 +131,37 @@ footer {
   color: #d5d5d5;
   padding-top: 2rem;
 }
-hr.light {
+/* hr.light {
   border-top: 1px solid #d5d5d5;
   width: 75%;
   margin-top: .8rem;
   margin-bottom: 1rem;
-}
-footer a {
+} */
+/* footer a {
   color: #d5d5d5;
-}
+} */
 hr.light-100 {
   border-top: 1px solid #d5d5d5;
   width: 100%;
   margin-top: .8rem;
   margin-bottom: 1rem;
 }
-.footer-image img{
-  width: 150px;
-  height: 60px;
+
+.google-map {
+  /* padding-top: 100%; */
+  padding-bottom: 60%;
+  position: relative;
 }
-
-
+.google-map iframe {
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  top: 45%; /* Positions the top of the iframe at the middle of the viewport */
+  left: 50%; /* Positions the left edge of the iframe at the center of the viewport */
+  transform: translate(-50%, -50%); /* Translates the iframe back by half of its own width and height */
+}
 /*---Media Queries --*/
-@media (max-width: 1500px){
+/* @media (max-width: 1500px){
   .carousel-inner img{
     width: 100%;
     height: 550px;
@@ -220,7 +237,7 @@ hr.light-100 {
     width: 100%;
     height: 100%;
   }
-}
+} */
 
 
 
